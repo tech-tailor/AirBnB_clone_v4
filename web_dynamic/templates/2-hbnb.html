@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/4-common.css') }}?cache_id={{ cache_id }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/2-hbnb.css') }}?cache_id={{ cache_id }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}?cache_id={{ cache_id }}">
+    <title>HBnB</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts/2-hbnb.js') }}?cache_id={{ cache_id }}"></script>
+</head>
+<body>
+<header>
+    <div class="logo"></div>
+    <div id="api_status" class="api-status"></div>
+</header>
+<div class="container">
+    <section class="filters">
+    </section>
+    <div class="placesh1"><h1>Places</h1></div>
+    <section class="places">
+    </section>
+</div>
+<footer>
+    <p>Holberton School</p>
+</footer>
+</body>
+</html>

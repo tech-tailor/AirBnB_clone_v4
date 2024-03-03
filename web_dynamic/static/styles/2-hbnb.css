@@ -1,0 +1,15 @@
+/* static/styles/2-hbnb.css */
+.api-status {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cccccc;
+}
+
+.api-status.available {
+    background-color: #ff545f;
+}
