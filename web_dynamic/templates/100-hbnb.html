@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/4-common.css') }}?cache_id={{ cache_id }}">
+    <!-- Add the other CSS file links with cache_id -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/100-hbnb.css') }}?cache_id={{ cache_id }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}?cache_id={{ cache_id }}">
+    <title>HBnB</title>
+    <!-- Import JQuery and the JavaScript file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts/100-hbnb.js') }}?cache_id={{ cache_id }}"></script>
+</head>
+<body>
+<header>
+    <div class="logo"></div>
+    <!-- New div element for API status -->
+    <div id="api_status" class="api-status"></div>
+</header>
+<div class="container">
+    <section class="filters">
+        <!-- Filters section content -->
+        <button id="search-button">Search</button>
+    </section>
+    <div class="placesh1"><h1>Places</h1></div>
+    <section class="places">
+        <!-- Places section content -->
+    </section>
+</div>
+<footer>
+    <p>Holberton School</p>
+</footer>
+</body>
+</html>
+
